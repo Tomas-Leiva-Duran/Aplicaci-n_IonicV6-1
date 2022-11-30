@@ -1,0 +1,118 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button auto-hide="auto"></ion-menu-button>
+      </ion-buttons>
+      <ion-searchbar></ion-searchbar>
+      <ion-buttons slot="primary">
+          <ion-button [routerLink]="['/usuario']" tab="usuario">
+              <ion-avatar>
+                  <img src="https://ionicframework.com/docs/demos/api/list/avatar-finn.png"/>
+              </ion-avatar>
+          </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu content-id="main-content">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title> Menú </ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-title>Opciones</ion-title>
+
+      <div>
+        <ion-button [routerLink]="['/tablinks']">
+
+        <ion-label>Inicio</ion-label>
+
+        <ion-icon name="home-outline"></ion-icon>
+
+        </ion-button>
+      </div>
+
+      <div>
+        <ion-button [routerLink]="['/camara']">
+
+        <ion-label> Camara </ion-label>
+
+        <ion-icon name="camera-outline"></ion-icon>
+
+        </ion-button>
+      </div>
+
+      <div>
+        <ion-button [routerLink]="['/contacto']">
+          <ion-label> Contactos  </ion-label>
+          <ion-icon name="people"> </ion-icon>
+        </ion-button>
+      </div>
+
+      <div>
+        <ion-button [routerLink]="['/geolocalizacion']">
+          <ion-label> GPS  </ion-label>
+          <ion-icon name="locate-outline"> </ion-icon>
+        </ion-button>
+      </div>
+
+      <div>
+        <ion-button [routerLink]="['/opciones']">
+
+        <ion-label> Más Opciones </ion-label>
+
+        <ion-icon name="hammer-outline"></ion-icon>
+
+        </ion-button>
+      </div>
+
+    </ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+    <ion-header>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+            </ion-buttons>
+            <ion-title>Menu2</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+        Tap the button in the toolbar to open the menu2.
+    </ion-content>
+</div>
+
+<ion-tabs>
+    <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="inicio">
+            <ion-label>Principal</ion-label>
+            <ion-icon name="home-outline"></ion-icon>
+        </ion-tab-button>
+
+
+        <ion-tab-button tab="explorar">
+            <ion-label>Explorar</ion-label>
+            <ion-icon name="compass-outline"></ion-icon>
+        </ion-tab-button>
+
+
+        <ion-tab-button tab="crear">
+            <ion-label>Crear</ion-label>
+            <ion-icon name="add-outline"></ion-icon>
+        </ion-tab-button>
+
+
+        <ion-tab-button tab="chat">
+            <ion-label>Chat</ion-label>
+            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+        </ion-tab-button>
+
+
+        <ion-tab-button tab="Notificaciones">
+            <ion-label>Notificaciones</ion-label>
+            <ion-icon name="notifications-outline"></ion-icon>
+        </ion-tab-button>
+    </ion-tab-bar>
+</ion-tabs>

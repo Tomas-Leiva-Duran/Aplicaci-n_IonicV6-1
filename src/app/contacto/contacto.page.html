@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Contactos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list *ngIf="permisoss">
+
+    <ion-item *ngFor="let contactos of contactos">
+
+      <ion-avatar slot="start">
+        <img src="../../assets/contacto-img/{{contactos.Image}}" />
+      </ion-avatar>
+      <ion-label>
+        <h2>{{contactos.name}}</h2>
+        <h3>{{contactos.State}}</h3>
+        <p>{{contactos.description}}</p>
+      </ion-label>
+
+    </ion-item>
+
+  </ion-list>
+
+  <ion-label *ngIf="!permisoss"> Sin Contactos Accesibles </ion-label>
+
+</ion-content>
+
+<ion-footer>
+  <ion-button display="flex" align-items="center" justify-content="center" flex-direction="column" (click)="gotoHome()" > Inicio </ion-button>
+</ion-footer>

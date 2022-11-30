@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-tab-bar>
+    <ion-tab-button>
+      <ion-button><ion-title>ok1
+      </ion-title>
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+    </ion-tab-button>
+ </ion-tab-bar>
+</ion-header>
+
+<ion-content>
+  <ion-tab-bar>
+
+    <ion-button>
+      <ion-icon name="add"></ion-icon>
+      <ion-title>Agregar</ion-title>
+    </ion-button>
+
+    <ion-button>
+      <ion-icon name="people"></ion-icon>
+      <ion-title>Agregar</ion-title>
+    </ion-button>
+
+  </ion-tab-bar>
+
+ <ion-content>
+  <ion-infinite-scroll threshold="25%" [disabled]="true" position="bottom" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+
+      <ion-accordion-group>
+
+      </ion-accordion-group>
+
+      <ion-card>
+
+        <ion-card-header>
+
+        </ion-card-header>
+
+        <ion-card-content>
+
+        </ion-card-content>
+
+      </ion-card>
+
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+ </ion-content>
+
+ <ion-row>
+  <ion-col id="primarioCard" *ngFor="let multiMedia of multiMedia" sizeLg="6" sizeMd="6" sizeXs="12">
+    <ion-card (click)="presentAlert2()">
+      <ion-card-title>{{multiMedia.name}}</ion-card-title>
+      <img src="../../assets/contacto-img/{{multiMedia.Image}}"/>
+    </ion-card>
+  </ion-col>
+ </ion-row>
+
+
+</ion-content>
+
+<ion-footer>
+
+</ion-footer>

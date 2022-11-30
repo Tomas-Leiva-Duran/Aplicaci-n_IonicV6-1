@@ -1,0 +1,24 @@
+ion-justify-content-center{
+  display:flex;
+ align-items: center;
+ justify-content:center;
+ flex-direction: column;
+}
+
+ion-button{
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+}
+
+ion-button:hover{
+ background-color: #4198ad;
+}
+
+.ion-text-center{
+  display:flex;
+ align-items: center;
+ justify-content:center;
+ flex-direction: column;
+}

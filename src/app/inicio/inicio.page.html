@@ -1,0 +1,63 @@
+<ion-header>
+<ion-tab-bar>
+
+</ion-tab-bar>
+</ion-header>
+
+<ion-content>
+  <ion-header>
+
+  </ion-header>
+
+    <ion-card id="primarioCard" *ngFor="let multiMedia of multiMedia">
+        <ion-item>
+            <ion-avatar slot="start">
+                <img src="https://ionicframework.com/docs/demos/api/list/avatar-finn.png" />
+            </ion-avatar>
+            <ion-label>
+                <h4>USUARIO</h4>
+                <h5>NOMBRE</h5>
+            </ion-label>
+        </ion-item>
+        <ion-card-header>
+            <ion-card-title>{{multiMedia.name}}</ion-card-title>
+        </ion-card-header>
+        <img src="../../assets/contacto-img/{{multiMedia.Image}}"/>
+
+    </ion-card>
+
+    <ion-row>
+      <ion-col id="primarioCard" *ngFor="let multiMedia of multiMedia" sizeLg="6" sizeMd="6" sizeXs="12">
+        <ion-card>
+          <ion-card-title>{{multiMedia.name}}</ion-card-title>
+          <img src="../../assets/contacto-img/{{multiMedia.Image}}"/>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-card>
+
+      <ion-card-header>
+
+        <ion-card-title>
+
+        </ion-card-title>
+
+        <ion-card-subtitle>
+
+        </ion-card-subtitle>
+
+      </ion-card-header>
+
+      <ion-card-content>
+
+      </ion-card-content>
+
+    </ion-card>
+
+
+</ion-content>
+
+<ion-footer></ion-footer>
