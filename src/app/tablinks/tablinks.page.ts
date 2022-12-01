@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./tablinks.page.scss'],
 })
 export class TablinksPage implements OnInit {
-  searchedUser: any;
+
   contactos: any = [];
   permisoss: boolean;
 
@@ -39,14 +39,5 @@ export class TablinksPage implements OnInit {
     );
   }
 
-  searchBuscador(event){
-    const text = event.target.value;
-    this.searchedUser = this.contactos;
-    if(text && text.trim() != '' ){
-      this.searchedUser = this.searchedUser.filter((user: any)=>{
-        return (user.name.toLowercase().indexOf(text.toLowerCase()) > -1);
-      })
-    }
-  }
 
 }

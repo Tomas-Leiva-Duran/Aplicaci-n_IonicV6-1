@@ -10,6 +10,7 @@ import { map } from 'rxjs/operators';
 })
 export class ContactoPage implements OnInit {
 
+  searchedUser: any;
   contactos: any = [];
   permisoss: boolean;
 
@@ -28,6 +29,7 @@ export class ContactoPage implements OnInit {
     this.getUsers().subscribe(res =>{
       console.log('Res',res);
       this.contactos = res;
+      this.searchedUser = this.contactos;
     });
   }
 
@@ -41,5 +43,18 @@ export class ContactoPage implements OnInit {
  /*.pipe(map((res: any) => res.data));
 
  */
+ searchBuscador(event){
+  const text = event.target.value;
+  this.searchedUser = this.contactos;
+  // eslint-disable-next-line eqeqeq
+  if(text && text.trim() != '' ){
+    // eslint-disable-next-line arrow-body-style
+    this.searchedUser = this.searchedUser.filter((user: any)=>{
+      return (user.name.toLowerCase().indexOf(text.toLowerCase()) > -1);
+      // eslint-disable-next-line @typescript-eslint/semi
+      })
+    }
+  }
+
 }
 
