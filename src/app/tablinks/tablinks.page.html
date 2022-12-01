@@ -3,7 +3,9 @@
       <ion-buttons slot="start">
           <ion-menu-button auto-hide="auto"></ion-menu-button>
       </ion-buttons>
-      <ion-searchbar></ion-searchbar>
+      <ion-searchbar placeholder="Buscar" animated (ionChange)="searchBuscador($event)">
+
+      </ion-searchbar>
       <ion-buttons slot="primary">
           <ion-button [routerLink]="['/usuario']" tab="usuario">
               <ion-avatar>
