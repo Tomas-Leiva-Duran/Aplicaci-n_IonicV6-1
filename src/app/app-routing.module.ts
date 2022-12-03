@@ -26,7 +26,12 @@ const routes: Routes = [
   {
     path: 'opciones',
     loadChildren: () => import('./opciones/opciones.module').then(m => m.OpcionesPageModule)
+  },
+  {
+    path: 'contenid/:id',
+    loadChildren: () => import('./contenid/contenid.module').then( m => m.ContenidPageModule)
   }
+
 
 
 ];

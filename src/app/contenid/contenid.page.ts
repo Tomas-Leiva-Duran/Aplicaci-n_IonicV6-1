@@ -1,22 +1,23 @@
-import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { map } from 'rxjs/operators';
-import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-inicio',
-  templateUrl: './inicio.page.html',
-  styleUrls: ['./inicio.page.scss'],
+  selector: 'app-contenid',
+  templateUrl: './contenid.page.html',
+  styleUrls: ['./contenid.page.scss'],
 })
-export class InicioPage implements OnInit {
-  multiMedia: any = [];
-  id: any;
+export class ContenidPage implements OnInit {
 
-  constructor(private router: Router,
-    private http: HttpClient,
-    private activatedRoute: ActivatedRoute
-    ) { }
+  id: any;
+  multiMedia: any = [];
+
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private http: HttpClient
+  ) { }
+
 
   ngOnInit() {
     console.log('holaaaaaaaaaaaaaaaaaaaa');
@@ -24,9 +25,9 @@ export class InicioPage implements OnInit {
       console.log('Res',res);
       this.multiMedia = res;
     });
+
     this.id = this.activatedRoute.snapshot.paramMap.get('id');
     console.log('id',this.id);
-
   }
 
   getMultiMedias() {
@@ -36,5 +37,4 @@ export class InicioPage implements OnInit {
       map((res: any) =>res.data)
     );
   }
-
 }
