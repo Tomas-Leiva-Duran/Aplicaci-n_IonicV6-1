@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'usuario',
-    loadChildren: () => import('./usuario/usuario.module').then( m => m.UsuarioPageModule)
+    loadChildren: () => import('./tablinks/usuario/usuario.module').then( m => m.UsuarioPageModule)
   },
   {
     path: 'geolocalizacion',
@@ -21,15 +21,15 @@ const routes: Routes = [
   },
   {
     path: 'contacto',
-    loadChildren: () => import('./contacto/contacto.module').then( m => m.ContactoPageModule)
+    loadChildren: () => import('./tablinks/contacto/contacto.module').then( m => m.ContactoPageModule)
   },
   {
     path: 'opciones',
-    loadChildren: () => import('./opciones/opciones.module').then(m => m.OpcionesPageModule)
+    loadChildren: () => import('./tablinks/opciones/opciones.module').then(m => m.OpcionesPageModule)
   },
   {
     path: 'contenid/:id',
-    loadChildren: () => import('./contenid/contenid.module').then( m => m.ContenidPageModule)
+    loadChildren: () => import('./tablinks/contenid/contenid.module').then( m => m.ContenidPageModule)
   }
 
 

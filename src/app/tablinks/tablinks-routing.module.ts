@@ -11,27 +11,27 @@ const routes: Routes = [
     children:[
       {
         path: 'inicio',
-        loadChildren:() => import('../inicio/inicio.module').then(m => m.InicioPageModule)
+        loadChildren:() => import('./inicio/inicio.module').then(m => m.InicioPageModule)
       },
       {
         path: 'explorar',
-        loadChildren: () => import('../explorar/explorar.module').then( m => m.ExplorarPageModule)
+        loadChildren: () => import('./explorar/explorar.module').then( m => m.ExplorarPageModule)
       },
       {
         path: 'crear',
-        loadChildren: () => import('../crear/crear.module').then( m => m.CrearPageModule)
+        loadChildren: () => import('./crear/crear.module').then( m => m.CrearPageModule)
       },
       {
         path: 'chat',
-        loadChildren: () => import('../chat/chat.module').then( m => m.ChatPageModule)
+        loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
       },
       {
         path: 'Notificaciones',
-        loadChildren: () => import('../Notificaciones/Notificaciones.module').then( m => m.NotificacionesPageModule)
+        loadChildren: () => import('./notificaciones/Notificaciones.module').then( m => m.NotificacionesPageModule)
       },
       {
         path: 'opciones',
-        loadChildren: () => import('../opciones/opciones.module').then(m => m.OpcionesPageModule)
+        loadChildren: () => import('./opciones/opciones.module').then(m => m.OpcionesPageModule)
       },
       {
         path: 'camara',
@@ -39,7 +39,7 @@ const routes: Routes = [
       },
       {
         path: 'usuario',
-        loadChildren: () => import('../usuario/usuario.module').then(m => m.UsuarioPageModule)
+        loadChildren: () => import('./usuario/usuario.module').then(m => m.UsuarioPageModule)
       },
       {
         path: 'geolocalizacion',

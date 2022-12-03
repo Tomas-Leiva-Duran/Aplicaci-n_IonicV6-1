@@ -1,4 +1,4 @@
-import { InicioPageRoutingModule } from './../inicio/inicio-routing.module';
+import { InicioPageRoutingModule } from '../inicio/inicio-routing.module';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { InicioPage } from '../inicio/inicio.page';
