@@ -6,7 +6,7 @@ ion-button{
 }
 
 ion-button:hover{
- background-color: #4198ad;
+ background-color: #00ccff;
 }
 
 ion-title{
@@ -14,4 +14,13 @@ ion-title{
  align-items: center;
  justify-content:center;
  flex-direction: column;
+}
+
+ion-label.optionss{
+  color: white;
+}
+ion-icon.opICON{
+  border-radius: 15px;
+  color: white;
+  box-shadow:rgb(0, 8, 77) 5px 5px 5px;
 }
