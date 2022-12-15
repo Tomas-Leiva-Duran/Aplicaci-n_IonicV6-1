@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: 'contenid/:id',
     loadChildren: () => import('./tablinks/contenid/contenid.module').then( m => m.ContenidPageModule)
+  },  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   }
+
 
 
 
