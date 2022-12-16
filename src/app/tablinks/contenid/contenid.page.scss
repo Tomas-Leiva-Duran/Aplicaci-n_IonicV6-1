@@ -25,8 +25,11 @@ ion-title{
   text-align: center;
 }
 .desc{
+  font-size: medium;
+  font-weight: bolder;
+  font-style: italic;
   margin: 50px;
-  color: cyan;
+  color: rgb(159, 255, 255);
 }
 ion-footer{
   background-color: darkblue;

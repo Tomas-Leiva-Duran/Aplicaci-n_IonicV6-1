@@ -10,10 +10,7 @@ ion-button{
   align-items: center;
   justify-content:center;
   flex-direction: column;
-}
-
-ion-button:hover{
- background-color: #4198ad;
+  background: linear-gradient(90deg, rgb(0, 214, 230), rgb(0, 37, 248));
 }
 
 .ion-text-center{
@@ -21,4 +18,19 @@ ion-button:hover{
  align-items: center;
  justify-content:center;
  flex-direction: column;
+}
+.divisor{
+  font-size: 40px;
+  font-weight:lighter;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgb(0, 206, 221), rgb(187, 0, 0));
+  color: rgb(0, 0, 0);
+  text-shadow: -2px 2px #00f7ffe7, -2px -2px #92b3fc, 2px -2px #50ffd3, 2px 2px #17ff02, 4px 4px #1900ff;
 }

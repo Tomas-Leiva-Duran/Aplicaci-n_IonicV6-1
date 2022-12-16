@@ -9,7 +9,7 @@
 
   </ion-header>
 
-    <ion-card id="primarioCard" *ngFor="let multiMedia of multiMedia">
+    <ion-card id="primarioCard" *ngFor="let multiMedia of multiMedia" [routerLink]="['/contenid', multiMedia.id]">
         <ion-item>
             <ion-avatar slot="start" *ngFor="let usuario of searchedUsuario">
                 <img src="../../assets/contacto-img/{{usuario.icon}}" />
@@ -25,6 +25,9 @@
         <img src="../../assets/contacto-img/{{multiMedia.Image}}"/>
 
     </ion-card>
+<ion-item-divider>
+  <ion-title class="divisor">Destacados</ion-title>
+</ion-item-divider>
 
     <ion-row>
       <ion-col id="primarioCard" *ngFor="let multiMedia of multiMedia" sizeLg="6" sizeMd="6" sizeXs="12">
