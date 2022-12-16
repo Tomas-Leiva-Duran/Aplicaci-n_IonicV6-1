@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-
+import { Camera, CameraOptions } from '@awesome-cordova-plugins/camera/ngx';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 //import { IonicStorageModule } from '@ionic/storage-angular';
@@ -21,7 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
       /*IonicStorageModule.forRoot(),*/AppRoutingModule,
       HttpClientModule],
   providers: [
-      Geolocation,
+      Geolocation, Camera,
     { provide: RouteReuseStrategy,
        useClass: IonicRouteStrategy, }],
   bootstrap: [AppComponent],
