@@ -26,10 +26,10 @@
     },
     {
       "id": 4,
-      "name": "BOOT",
+      "name": "BOT",
       "Date": "15/12/2022  17:50 pm",
       "description": "Nuevo mensaje de BOOT",
-      "Image": "avatar-leia.png",
+      "Image": "robot.png",
       "contenido": "Muestra"
     }
 

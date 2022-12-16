@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ChatPageRoutingModule } from './mensajes-routing.module';
+import { MensajesPageRoutingModule } from './mensajes-routing.module';
 
 import { MensajesPage } from './mensajes.page';
 
@@ -13,8 +13,8 @@ import { MensajesPage } from './mensajes.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ChatPageRoutingModule
+    MensajesPageRoutingModule
   ],
   declarations: [MensajesPage]
 })
-export class ChatPageModule {}
+export class MensajesPageModule {}

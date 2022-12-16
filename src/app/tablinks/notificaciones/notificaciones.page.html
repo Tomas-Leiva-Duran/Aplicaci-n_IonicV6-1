@@ -13,12 +13,12 @@
     <ion-list *ngIf="permisoss">
       <ion-item *ngFor="let notificaciones of searchedNotificaciones">
         <ion-avatar slot="start">
-          <img src="../../assets/contacto-img/{{contactos.Image}}" />
+          <img src="../../assets/contacto-img/{{notificacion.Image}}" />
         </ion-avatar>
         <ion-label>
-          <h2>{{contactos.name}}</h2>
-          <h3>{{contactos.State}}</h3>
-          <p>{{contactos.description}}</p>
+          <h2>{{notificacion.name}}</h2>
+          <h3>{{notificacion.Date}}</h3>
+          <p>{{notificacion.description}}</p>
         </ion-label>
         <ion-button slot="end"><ion-icon name="chevron-forward-circle-outline"></ion-icon></ion-button>
       </ion-item>
