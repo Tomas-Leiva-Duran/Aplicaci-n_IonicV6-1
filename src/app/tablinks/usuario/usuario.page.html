@@ -1,41 +1,37 @@
-<ion-header>
+<ion-header *ngFor="let usuario of searchedUsuario">
     <ion-toolbar>
-        <ion-title>Nombre Usuario </ion-title>
+        <ion-title>{{usuario.name}}</ion-title>
+              <ion-avatar slot="end">
+                  <img src="../../assets/contacto-img/{{usuario.icon}}"/>
+              </ion-avatar>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-list>
+    <ion-list *ngFor="let usuario of searchedUsuario">
         <ion-item>
             <ion-label>Seguidores</ion-label>
-            <ion-badge color="primary">#???</ion-badge>
+            <ion-badge color="primary">{{usuario.Seguidores}}</ion-badge>
         </ion-item>
         <ion-item>
             <ion-label>Me Gusta</ion-label>
-            <ion-badge color="secondary"> #??? </ion-badge>
+            <ion-badge color="secondary">{{usuario.MeGusta}}</ion-badge>
         </ion-item>
         <ion-item>
             <ion-label>Estrellas</ion-label>
-            <ion-badge color="tertiary"> #??? </ion-badge>
-        </ion-item>
-        <ion-item>
-            <ion-label>Terminado</ion-label>
-            <ion-badge color="success"> #??? </ion-badge>
+            <ion-badge color="tertiary">{{usuario.Estrellas}}</ion-badge>
         </ion-item>
         <ion-item>
             <ion-label>Advertencias</ion-label>
-            <ion-badge color="warning"> #??? </ion-badge>
+            <ion-badge color="warning">{{usuario.Advertencias}}</ion-badge>
         </ion-item>
         <ion-item>
             <ion-label>Notificaciones</ion-label>
-            <ion-badge color="danger"> #??? </ion-badge>
+            <ion-badge [routerLink]="['src/app/tablinks/notificaciones']">{{usuario.Notificaciones}}</ion-badge>
         </ion-item>
     </ion-list>
 
-    <ion-button (click)="gotoHome()"> Ir Al Inicio </ion-button>
-
-
-    <ion-button [routerLink]="['/tablinks']">Go to HOME</ion-button>
+    <ion-button (click)="gotoHome()">Ir Al Inicio</ion-button>
 </ion-content>
 
 <ion-footer>

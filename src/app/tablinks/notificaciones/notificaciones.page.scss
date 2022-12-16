@@ -1,0 +1,13 @@
+ion-title{
+  display:flex;
+ align-items: center;
+ justify-content:center;
+ flex-direction: column;
+}
+h5{
+max-height:2px ;
+min-height: 1px;
+width: 2px;
+font-size: xx-small;
+text-decoration: transparentize($color: #00eeff, $amount: 25);
+}

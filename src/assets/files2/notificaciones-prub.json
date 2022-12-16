@@ -3,7 +3,8 @@
     {
       "id": 1,
       "name": "Han",
-      "Date": "15/12/2022  23:50 pm",
+      "Date": "15/12/2022",
+      "hora": "23:50 PM",
       "description": "Han te a enviado una foto",
       "Image": "avatar-han.png",
       "contenido": "Muestra"
@@ -11,7 +12,8 @@
     {
       "id": 2,
       "name": "Luke",
-      "Date": "15/12/2022  21:50 pm",
+      "Date": "15/12/2022",
+      "hora": "21:50 PM",
       "description": "Luke te a enviado un archivo",
       "Image": "avatar-luke.png",
       "contenido": "Muestra"
@@ -19,7 +21,8 @@
     {
       "id": 3,
       "name": "Leia",
-      "Date": "15/12/2022  18:50 pm",
+      "Date": "15/12/2022",
+      "hora": "18:50 PM",
       "description": "Nuevo mensaje de Leia",
       "Image": "avatar-leia.png",
       "contenido": "Muestra"
@@ -27,8 +30,9 @@
     {
       "id": 4,
       "name": "BOT",
-      "Date": "15/12/2022  17:50 pm",
-      "description": "Nuevo mensaje de BOOT",
+      "Date": "15/12/2022",
+      "hora": "17:50 PM",
+      "description": "Nuevo mensaje de BOT",
       "Image": "robot.png",
       "contenido": "Muestra"
     }

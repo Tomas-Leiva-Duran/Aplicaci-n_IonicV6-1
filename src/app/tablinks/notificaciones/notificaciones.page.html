@@ -13,14 +13,23 @@
     <ion-list *ngIf="permisoss">
       <ion-item *ngFor="let notificaciones of searchedNotificaciones">
         <ion-avatar slot="start">
-          <img src="../../assets/contacto-img/{{notificacion.Image}}" />
+          <img src="../../assets/contacto-img/{{notificaciones.Image}}" />
         </ion-avatar>
         <ion-label>
-          <h2>{{notificacion.name}}</h2>
-          <h3>{{notificacion.Date}}</h3>
-          <p>{{notificacion.description}}</p>
+
+          <h2>{{notificaciones.name}}</h2>
+           <h3>{{notificaciones.description}}</h3>
+          <p>{{notificaciones.Date}}</p>
+          <p>{{notificaciones.hora}}</p>
         </ion-label>
-        <ion-button slot="end"><ion-icon name="chevron-forward-circle-outline"></ion-icon></ion-button>
+        <ion-button slot="end">
+          <ion-icon name="notifications-circle-outline">
+          </ion-icon>
+        </ion-button>
+
+
+
+
       </ion-item>
     </ion-list>
   </p>
