@@ -9,6 +9,8 @@ import { Camera, CameraOptions } from '@awesome-cordova-plugins/camera/ngx';
 })
 export class CamaraPage implements OnInit {
 
+  archivi: any;
+
   constructor(
     private router: Router,
     private camera: Camera
@@ -37,6 +39,7 @@ export class CamaraPage implements OnInit {
    }, (err) => {
     // Handle error
    });
+   this.archivi = this.camera;
   }
 
 }
