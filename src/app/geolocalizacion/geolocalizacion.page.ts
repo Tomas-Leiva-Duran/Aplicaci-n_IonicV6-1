@@ -11,21 +11,9 @@ import { NavController } from '@ionic/angular';
 export class GeolocalizacionPage implements OnInit{
 
 
-/*
-this.geolocation.getCurrentPosition().then((resp) => {
- // resp.coords.latitude
- // resp.coords.longitude
-}).catch((error) => {
-  console.log('Error getting location', error);
-});
+  latitude: any;
+  longitude: any;
 
-let watch = this.geolocation.watchPosition();
-watch.subscribe((data) => {
- // data can be a set of coordinates, or an error (if an error occurred).
- // data.coords.latitude
- // data.coords.longitude
-});
-*/
   constructor(private router: Router, public navCtrl: NavController, public geolocation: Geolocation){ }
 
 gotoHome(){
@@ -39,4 +27,23 @@ ngOnInit(){
 geolocationNative(): void{
   this.geolocation.getCurrentPosition().then((geoposition: Geoposition) =>{console.log(geoposition); });
 }
+
+usarGps(){
+  this.geolocation.getCurrentPosition().then((resp) => {
+    console.log(resp);
+
+   }).catch((error) => {
+     console.log('Error getting location', error);
+   });
+
+   // eslint-disable-next-line prefer-const
+   let watch = this.geolocation.watchPosition();
+    watch.subscribe((data) => {
+ // data can be a set of coordinates, or an error (if an error occurred).
+ // data.coords.latitude
+ // data.coords.longitude
+  });
+
+  }
+
 }
