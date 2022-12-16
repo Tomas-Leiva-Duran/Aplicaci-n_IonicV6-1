@@ -12,6 +12,8 @@ export class TablinksPage implements OnInit {
 
   contactos: any = [];
   permisoss: boolean;
+  searchedUsuario: any;
+  usuario: any = [];
 
   constructor(
     private router: Router,
@@ -29,6 +31,18 @@ export class TablinksPage implements OnInit {
       console.log('Res',res);
       this.contactos = res;
     });
+    this.getUsuarios().subscribe(res =>{
+      console.log('Res',res);
+      this.usuario = res;
+      this.searchedUsuario = this.usuario;
+    });
+  }
+  getUsuarios() {
+    return this.http
+    .get('assets/files2/pruebaDeUsuario.json')
+    .pipe(
+      map((res: any) =>res.data)
+    );
   }
 
   getUsers() {

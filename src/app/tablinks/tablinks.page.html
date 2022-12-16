@@ -8,8 +8,8 @@
       </ion-searchbar>
       <ion-buttons slot="primary">
           <ion-button [routerLink]="['/usuario']" tab="usuario">
-              <ion-avatar>
-                  <img src="https://ionicframework.com/docs/demos/api/list/avatar-finn.png"/>
+              <ion-avatar *ngFor="let usuario of searchedUsuario">
+                  <img src="../../assets/contacto-img/{{usuario.icon}}"/>
               </ion-avatar>
           </ion-button>
       </ion-buttons>
@@ -85,11 +85,11 @@
             <ion-buttons slot="start">
                 <ion-menu-button></ion-menu-button>
             </ion-buttons>
-            <ion-title>Menu2</ion-title>
+            <ion-title>Super-Menú </ion-title>
         </ion-toolbar>
     </ion-header>
-    <ion-content class="ion-padding">
-        Tap the button in the toolbar to open the menu2.
+    <ion-content class="ion-padding" >
+        No posee Permisos de Acceso.
     </ion-content>
 </div>
 
