@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
-  token= 'cmoalpc';
+  token = 'cmoalpc';
 
   constructor(
     private router: Router

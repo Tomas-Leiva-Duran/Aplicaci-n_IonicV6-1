@@ -4,7 +4,24 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
 
-
+  <p>
+    <ion-list *ngIf="permisoss">
+      <ion-item *ngFor="let notificaciones of searchedNotificaciones">
+        <ion-avatar slot="start">
+          <img src="../../assets/contacto-img/{{contactos.Image}}" />
+        </ion-avatar>
+        <ion-label>
+          <h2>{{contactos.name}}</h2>
+          <h3>{{contactos.State}}</h3>
+          <p>{{contactos.description}}</p>
+        </ion-label>
+        <ion-button slot="end"><ion-icon name="chevron-forward-circle-outline"></ion-icon></ion-button>
+      </ion-item>
+    </ion-list>
+  </p>
 </ion-content>

@@ -1,0 +1,39 @@
+{
+  "data":[
+    {
+      "id": 1,
+      "name": "Han",
+      "Date": "15/12/2022  23:50 pm",
+      "description": "Han te a enviado una foto",
+      "Image": "avatar-han.png",
+      "contenido": "Muestra"
+    },
+    {
+      "id": 2,
+      "name": "Luke",
+      "Date": "15/12/2022  21:50 pm",
+      "description": "Luke te a enviado un archivo",
+      "Image": "avatar-luke.png",
+      "contenido": "Muestra"
+    },
+    {
+      "id": 3,
+      "name": "Leia",
+      "Date": "15/12/2022  18:50 pm",
+      "description": "Nuevo mensaje de Leia",
+      "Image": "avatar-leia.png",
+      "contenido": "Muestra"
+    },
+    {
+      "id": 4,
+      "name": "BOOT",
+      "Date": "15/12/2022  17:50 pm",
+      "description": "Nuevo mensaje de BOOT",
+      "Image": "avatar-leia.png",
+      "contenido": "Muestra"
+    }
+
+
+  ]
+
+}
